@@ -1,4 +1,5 @@
-#Name : CMC_Twitter_Fetch.py
+#Author : Parth Pandya
+#Name : CMC_Coin_Info_Fetch.py
 #Description : 
 #To pull out twitter handle of all the currency and make a xls file. This uses APIs provided by CMC.
 #This twitter handles will be used for monitoring using twitter APIs in other module.
@@ -52,22 +53,22 @@ headers = {
 Map_details_list = [  'Dummy',
                       'Main_id' , 
                       'Name', 
-					  'Symbol', 
-					  'URL_name', 
-					  'Is_Active', 
-					  'status',
+                      'Symbol', 
+                      'URL_name', 
+                      'Is_Active', 
+                      'status',
                       'first_historical_data', 
-				      'last_historical_data', 
-				      'platform', 
-				      'platform_name', 
-				      'platform_token_address' , 
-				      'catagory_coin_tocken', 
-				      'logo_url',
-					  'description',
-					  'date_added',
-					  'notice',
-					  'tags_minable_or_not',
-					  'website',
+                      'last_historical_data', 
+                      'platform', 
+                      'platform_name', 
+                      'platform_token_address' , 
+                      'catagory_coin_tocken', 
+                      'logo_url',
+                      'description',
+                      'date_added',
+                      'notice',
+                      'tags_minable_or_not',
+                      'website',
                       'technical_doc',
                       'explorer',
                       'source_code',
@@ -76,8 +77,9 @@ Map_details_list = [  'Dummy',
                       'announcement',
                       'reddit',
                       'twitter'
-				   ]
-
+                    ]
+					
+					
 session = Session()
 session.headers.update(headers)
 
@@ -141,23 +143,75 @@ except (ConnectionError, Timeout, TooManyRedirects) as e:
   
 #fetching list of twitter accounts
 
-# length_id = len(id_list)
+length_id = len(id_list)
 
-# for i in range(0, length_id, 100 ):
+for i in range(0, length_id, 100 ):
 
-  # Curr_id_list = list(id_list[i: i+100 if i+100 < length_id else length_id ])
-  # parameters_info_ids['id'] = ','.join(map(str, Curr_id_list)) 
+  Curr_id_list = list(id_list[i: i+100 if i+100 < length_id else length_id ])
+  parameters_info_ids['id'] = ','.join(map(str, Curr_id_list)) 
 
-  # try:
-    # response = session.get(url_info, params=parameters_info_ids)
-    # data_info = json.loads(response.text)
-    # data_info = str(data_info).encode('utf8')
-    # print(data_info)
-    # print("************************************************************")
-    # print("************************************************************")
-  # except (ConnectionError, Timeout, TooManyRedirects) as e:
-    # print("There is some issue fetching meta data of currency , here is the error !!! " )
-    # print(e)
+  try:
+    response = session.get(url_info, params=parameters_info_ids)
+    data_info = json.loads(response.text)
+	
+    cnt = 0
+    for j in range(i, i+100 if i+100 < length_id else length_id ):
+
+      sheet.cell(row = j+2, column = Map_details_list.index('catagory_coin_tocken')).value = \
+      str(data_info['data'][str(Curr_id_list[cnt])]['category'])
+      
+      sheet.cell(row = j+2, column = Map_details_list.index('logo_url')).value = \
+      str(data_info['data'][str(Curr_id_list[cnt])]['logo'])
+      
+      sheet.cell(row = j+2, column = Map_details_list.index('description')).value = \
+      str(data_info['data'][str(Curr_id_list[cnt])]['description'])
+      
+      sheet.cell(row = j+2, column = Map_details_list.index('date_added')).value = \
+      str(data_info['data'][str(Curr_id_list[cnt])]['date_added'])
+      
+      sheet.cell(row = j+2, column = Map_details_list.index('notice')).value = \
+      str(data_info['data'][str(Curr_id_list[cnt])]['notice'])
+      
+      sheet.cell(row = j+2, column = Map_details_list.index('tags_minable_or_not')).value = \
+      str(data_info['data'][str(Curr_id_list[cnt])]['tags'])
+      
+      sheet.cell(row = j+2, column = Map_details_list.index('website')).value = \
+      str(data_info['data'][str(Curr_id_list[cnt])]['urls']['website'])
+      
+      sheet.cell(row = j+2, column = Map_details_list.index('technical_doc')).value = \
+      str(data_info['data'][str(Curr_id_list[cnt])]['urls']['technical_doc'])
+      
+      sheet.cell(row = j+2, column = Map_details_list.index('explorer')).value = \
+      str(data_info['data'][str(Curr_id_list[cnt])]['urls']['explorer'])
+      
+      sheet.cell(row = j+2, column = Map_details_list.index('source_code')).value = \
+      str(data_info['data'][str(Curr_id_list[cnt])]['urls']['source_code'])
+      
+      sheet.cell(row = j+2, column = Map_details_list.index('message_board')).value = \
+      str(data_info['data'][str(Curr_id_list[cnt])]['urls']['message_board'])
+      
+      sheet.cell(row = j+2, column = Map_details_list.index('chat')).value = \
+      str(data_info['data'][str(Curr_id_list[cnt])]['urls']['chat'])
+      
+      sheet.cell(row = j+2, column = Map_details_list.index('announcement')).value = \
+      str(data_info['data'][str(Curr_id_list[cnt])]['urls']['announcement'])
+      
+      sheet.cell(row = j+2, column = Map_details_list.index('reddit')).value = \
+      str(data_info['data'][str(Curr_id_list[cnt])]['urls']['reddit'])
+      
+      sheet.cell(row = j+2, column = Map_details_list.index('twitter')).value = \
+      str(data_info['data'][str(Curr_id_list[cnt])]['urls']['twitter'])
+
+      cnt = cnt + 1
+	
+    #data_info = str(data_info).encode('utf8')
+    #print(data_info)
+    #print("************************************************************")
+    #print("************************************************************")
+	
+  except (ConnectionError, Timeout, TooManyRedirects) as e:
+    print("There is some issue fetching meta data of currency , here is the error !!! " )
+    print(e)
 	
 wb.save("CMC_Coin_Details_Auto.xlsx") 
 	
