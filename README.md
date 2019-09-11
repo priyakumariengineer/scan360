@@ -1,27 +1,24 @@
-# scan360
-An algoritham based approch for trading.
+# Scan360
+## An automated algorithm-based approach for trading.
 
-Work to be done :
+### Work to be done:
 
-CMC_coin_info_fetch.py
+#### Fundamental module:
 
--> fetch currency ranking data , and volume data.
--> fetch twitter, website details of few major exchanges ( may be create a seprate file. )
--> map details that which currency is availible on what exchange.
+> CMC_coin_info_fetch.py
 
-Twitt_count.py
+-[] fetch currency ranking data , and volume data. 
+-[] fetch twitter, website details of few major exchanges ( may be create a separate file. ) 
+-[] map details of which currencies is available on what exchange.
 
--> A file to monitor number of times twitt being using $ symbol for differnet crypto ?? and provide twitter popularity index.
+> Twitt_count.py
 
-Twitt_monitor_accounts.py
+-[] A file to monitor number of times tweets are made using $ symbol for different crypto ?? and provide a twitter popularity index.
 
--> A file which monitor official twitter accounts of major crypto currencies ( may be exchange based like coin availible only on binance ), and then analyse their tweet based on certain keyword and give rating to tweet effect also keep track of price changes with tweet beign made.
+> Twitt_monitor_accounts.py
 
--> similply give notifiy when fresh tweets are availible from official accounts.
+-[] A file which monitor official twitter accounts of major crypto currencies ( may be exchange based like coin available only on binance ), and then analyze their tweets based on certain keywords and give rating to tweet effect also keep track of price changes with tweet being made.
 
--> Also monitor tweeter of crypto exchanges and their founders for certain key words and new listings example : binance founder , tron founder etc.
-   
+-[] simply notify when fresh tweets are available from official accounts.
 
-
-
-
+-[] Also monitor tweeter of crypto exchanges and their founders for certain key words and new listings example : binance founder , tron founder etc.
