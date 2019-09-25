@@ -1,5 +1,5 @@
 # Scan360
-## An automated algorithm-based approach for trading.
+## An automated algorithm-based approach for crypto currency trading.
 
 ### Work to be done:
 
@@ -23,5 +23,14 @@
 
 -  [ ] Also monitor tweeter of crypto exchanges and their founders for certain key words and new listings example : binance founder , tron founder etc.
 
+Also there are more things like monitoring
+hash rate of crypto , 
+transactions on ledger, 
+activitity on dapps,
+crypto segments and user acceptibility.
+
 #### - In Technical module:
-@parthPandya47 will update soon
+
+Major intention of Technical module is to stream high speed socket data of price, volume and order book movement and take dicision as per that.
+
+Yet to include more details.
