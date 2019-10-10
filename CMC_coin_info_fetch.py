@@ -4,11 +4,6 @@
 #To pull out twitter handle of all the currency and make a xls file. This uses APIs provided by CMC.
 #This twitter handles will be used for monitoring using twitter APIs in other module.
 #
-#Production key CMC :
-#ce263360-1f12-462b-8c15-842a2823df04
-#
-#Test key CMC:
-#fe440872-5552-4791-ba1d-6c241ce9c931
 #
 #production link: https://pro-api.coinmarketcap.com
 #Test link: https://sandbox-api.coinmarketcap.com/
@@ -44,9 +39,9 @@ parameters_info_ids = {
 headers = {
   'Accepts': 'application/json',
   #TEST
-  'X-CMC_PRO_API_KEY': 'fe440872-5552-4791-ba1d-6c241ce9c931',
+  'X-CMC_PRO_API_KEY': 'Your key here',
   #PRO
-  #'X-CMC_PRO_API_KEY': 'ce263360-1f12-462b-8c15-842a2823df04',
+  #'X-CMC_PRO_API_KEY': 'Your key here',
 }
 
 
