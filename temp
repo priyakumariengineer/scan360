@@ -8,3 +8,18 @@ https://confluence.microchip.com/display/DTS/Installers
 Artifacts:
 plugin: http://discourse.microchip.com/do-not-distribute/continuous/updates.xml
 Standalone: http://mplabx.microchip.com/dv_installers/
+
+-----------------------------------------------------------------------------------------------
+
+HExmate projects :
+https://microchiptechnology-my.sharepoint.com/personal/tilak_girijeswar_microchip_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftilak%5Fgirijeswar%5Fmicrochip%5Fcom%2FDocuments%2FHexmate%5FCRC&ct=1573628527759&or=OWA-NT&cid=7164cd06-1506-bf36-b126-6432b637d463&originalPath=aHR0cHM6Ly9taWNyb2NoaXB0ZWNobm9sb2d5LW15LnNoYXJlcG9pbnQuY29tLzpmOi9nL3BlcnNvbmFsL3RpbGFrX2dpcmlqZXN3YXJfbWljcm9jaGlwX2NvbS9FaGc0LWN2TmptSk9nVWNWNXFRR3hLQUJXa05yTmthUEswekY2aFZ1bVRyblJ3P3J0aW1lPUdjSV9aZ2RvMTBn
+
+PIC16: "C:\Users\I15076\Downloads\hexmate_v4\dist\win\pic\bin\hexmate.exe" memory_PE.hex -addressing=2 +-ck=0000-7ffd@7ffe+ffffw2g5p0x1021t34r2 +-ck=f000-F0FD@f0fe+ffffw2g5p0x1021t00r2 --edf=D:\Microchip\xc8\v2.10_R\pic\dat\en_msgs.txt -omemory_out.hex
+
+ 
+
+PIC18:
+
+D:\CAA\hexmate\test_18F47K40.X>"C:\Users\I15076\Downloads\hexmate_v4\dist\win\pic\bin\hexmate.exe" memory.hex +-ck=0000-1fffd@1fffe+ffffw1g5p0x1021r2 +-ck=310000-3103fd@3103fe+ffffw2g5p0x1021 --edf=D:\Microchip\xc8\v2.10_R\pic\dat\en_msgs.txt -omemory_out.hex
+
+
