@@ -35,5 +35,6 @@ bins for MPLAB X : /opt/microchip/mplabx/v5.30/mplab_platform/bin
 ----------------------------------------------------------------------------------------------------
 netapps:
 smb://idc-netapp02.microchip.com/devsys/
+\\idc-netapp02\Devsys
 
 
