@@ -26,3 +26,10 @@ XC8 download from bamboo server:
 http://chn-sv-cyclone.microchip.com:8085/browse/XC8-XC8E2-IMAGES-8/artifact
 
 
+----------------------------------------------------------------------------------------------------
+
+installer paths :
+
+Ubuntu : /opt/microchip/xc32/v2.30
+
+
