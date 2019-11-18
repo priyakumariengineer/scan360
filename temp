@@ -22,4 +22,7 @@ PIC18:
 
 D:\CAA\hexmate\test_18F47K40.X>"C:\Users\I15076\Downloads\hexmate_v4\dist\win\pic\bin\hexmate.exe" memory.hex +-ck=0000-1fffd@1fffe+ffffw1g5p0x1021r2 +-ck=310000-3103fd@3103fe+ffffw2g5p0x1021 --edf=D:\Microchip\xc8\v2.10_R\pic\dat\en_msgs.txt -omemory_out.hex
 
+XC8 download from bamboo server:
+http://chn-sv-cyclone.microchip.com:8085/browse/XC8-XC8E2-IMAGES-8/artifact
+
 
