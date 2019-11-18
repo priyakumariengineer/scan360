@@ -31,5 +31,6 @@ http://chn-sv-cyclone.microchip.com:8085/browse/XC8-XC8E2-IMAGES-8/artifact
 installer paths :
 
 Ubuntu : /opt/microchip/xc32/v2.30
+bins for MPLAB X : /opt/microchip/mplabx/v5.30/mplab_platform/bin
 
 
