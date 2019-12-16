@@ -1,0 +1,75 @@
+Installation and hot plugin :
+
+*********************************************
+Windows 10 64-bit:
+*********************************************
+Standalone - Latest Stable Version : 0.2.622
+Flagged as virus 
+
+1) SAML11 Xplained PRO : Detected
+– Data Gateway Interface: SPI, I2C, four GPIOs
+– Virtual COM port (CDC)
+
+2) ATMega4809 xplained pro  : Detected
+– Data Gateway Interface: SPI, I2C, four GPIOs
+– Virtual COM port (CDC)
+
+3) atmega328p xplained mini : Detected
+– Virtual COM port (CDC)
+
+4) attiny104 xplained nano : Detected
+– Virtual COM port (CDC)
+
+5) Atmel power debuger: Detected
+– Data Gateway Interface: SPI, I2C, USART, four GPIOs
+– Virtual COM port (CDC)
+
+6) MPLAB Xpress PIC18F46K42 : Detected
+– Virtual COM port (CDC)
+
+7) PIC16F18466 curiosity Nano : Detected
+– Virtual COM port (CDC)
+
+---------------------------------------------
+
+plugin - Countinuos Build Version: 1.0.637
+
+first MCC and DV was installed then MCC and DV both was unistalled and
+then DV was again installed.
+
+1) SAML11 Xplained PRO : Detected
+– Data Gateway Interface: SPI, I2C, four GPIOs
+– Virtual COM port (CDC)
+
+2) ATMega4809 xplained pro  : Detected
+– Data Gateway Interface: SPI, I2C, four GPIOs
+– Virtual COM port (CDC)
+
+3) atmega328p xplained mini : Detected
+– Virtual COM port (CDC)
+
+4) attiny104 xplained nano : Detected
+– Virtual COM port (CDC)
+
+5) Atmel power debuger: Detected
+– Data Gateway Interface: SPI, I2C, USART, four GPIOs
+– Virtual COM port (CDC)
+
+6) MPLAB Xpress PIC18F46K42 : Detected
+– Virtual COM port (CDC)
+
+7) PIC16F18466 curiosity Nano : Detected
+– Virtual COM port (CDC)
+
+*********************************************
+Mac OS X :
+*********************************************
+
+
+
+
+
+
+
+
+
