@@ -56,6 +56,16 @@ MAC : 10.41.80.66
 uname : devsys
 Password: microchip
 
+[2:22 PM] Pushpak Naikavde - I16088
+    Just check if you are able to connect
+​[2:22 PM] Pushpak Naikavde - I16088
+    Else you may need to download putty
+​[2:22 PM] Pushpak Naikavde - I16088
+     and do  ssh login
+​[2:22 PM] Pushpak Naikavde - I16088
+    and run the command x11vnc 
+
+
 
 
 
